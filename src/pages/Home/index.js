@@ -17,6 +17,10 @@ function Home() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
+    speed: 1500,
+    autoplaySpeed: 5000,
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -38,6 +42,7 @@ function Home() {
     <div className="page-content">
       <section className="homepage_section1">
         <div className="videos_container" style={{marginBottom:'30px'}}>
+        <h1>Meet Your Teachers</h1>
           <Slider {...settings}>
             {/* //video 1 */}
             <div>

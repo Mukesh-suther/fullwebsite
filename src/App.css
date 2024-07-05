@@ -375,6 +375,10 @@ header .mobileheader{
     border-radius: 8px;
     overflow: hidden;
   }
+  .header .headerinner {
+   max-width: 1170px;
+   margin: auto;
+}
   @media only screen and (max-width:1302px){
     .header{
       padding: 0px;
