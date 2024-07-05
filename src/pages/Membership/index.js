@@ -1,7 +1,10 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import './membership.css'
 function Membership() {
+    useEffect(() => {
+        document.title = "Jeeva Joy | Membership | Kids Exercise Videos App | Fun Fitness for Children on Mobile, Smart TV, & Web";
+      }, []);
   return (
     <div className="page-content">
         <section>

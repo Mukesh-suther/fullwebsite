@@ -12,10 +12,7 @@ function Footer() {
                     <Link to="/about">About Us</Link>
                 </li>
                 <li>
-                    <Link to="/contactus">Membership</Link>
-                </li>
-                <li>
-                    <Link to="/blog">Blog</Link>
+                    <Link to="/membership">Membership</Link>
                 </li>
             </ul>
         </div>

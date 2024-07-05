@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './blog.css'
 import img1 from './../../assets/images/pexels-cottonbro-3662800-1@2x-676x510.jpg';
 import img2 from './../../assets/images/front-view-children-playing-together-kindergarten@2x-676x510.jpg';
@@ -21,6 +21,9 @@ const BlogCard = ({ href, imgSrc, editorName, duration, description }) => (
 );
 
 const Blog = () => {
+  useEffect(() => {
+    document.title = "Jeeva Joy | Blog | Kids Exercise Videos App | Fun Fitness for Children on Mobile, Smart TV, & Web";
+  }, []);
   return (
     <div className="page-content">
       <section style={{ padding: '20px 0px 80px 0px' }}>

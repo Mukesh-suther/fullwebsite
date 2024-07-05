@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './contactus.css'; // Make sure to create and style this CSS file accordingly
-
 const Contactus = () => {
+  useEffect(() => {
+    document.title = "Jeeva Joy | Contact Us | Kids Exercise Videos App | Fun Fitness for Children on Mobile, Smart TV, & Web";
+  }, []);
   return (
     <div className="page-content">
       <section style={{ padding: '0px' }}>

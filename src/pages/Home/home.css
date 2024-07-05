@@ -80,4 +80,10 @@
     .homepagegalleryinner{
         grid-template-columns: repeat(1, 1fr);
     }
+    .homepagegalleryinner > div{
+        display: none;
+    }
+    .homepagegalleryinner > div:nth-child(1){
+        display: block;
+    }
 }

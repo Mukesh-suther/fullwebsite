@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import circleimg from './../../assets/images/circle@2x.jpg'
 import './faqs.css'
 const AccordionItem = ({ title, children }) => {
@@ -15,6 +15,9 @@ const AccordionItem = ({ title, children }) => {
 };
 
 const Faqs = () => {
+  useEffect(() => {
+    document.title = "Jeeva Joy | Faqs | Kids Exercise Videos App | Fun Fitness for Children on Mobile, Smart TV, & Web";
+  }, []);
   return (
     <div className="page-content">
       <section style={{ padding: '0px' }}>

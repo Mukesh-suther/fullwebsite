@@ -1,6 +1,6 @@
 .contact-container{
     font-family: "Nunito Sans", sans-serif;
-    max-width: 819px;
+    /* max-width: 819px; */
     width: 100%;
     padding: 10px;
 }
@@ -10,8 +10,11 @@
     padding-bottom: 0px;
     font-weight: 500;
     text-align: left;
+    display: flex;
 }
-
+.contact-container iframe{
+    margin: auto;
+}
 .form {
     display: flex;
     flex-direction: column;

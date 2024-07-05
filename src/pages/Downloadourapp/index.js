@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import applestore from './../../assets/images/apple-app-store-icon.png'
 import playstore from './../../assets/images/play-store.png'
 import amazonicon from './../../assets/images/AmazonAppStoreIcon.png'
@@ -6,6 +6,9 @@ import windowstore from './../../assets/images/Windows-Store.png'
 import './downloadoutapp.css'
 import { Link } from 'react-router-dom'
 function Downloadourapp() {
+  useEffect(() => {
+    document.title = "Jeeva Joy | Download Our App | Kids Exercise Videos App | Fun Fitness for Children on Mobile, Smart TV, & Web";
+  }, []);
   return (
     <div className="page-content" style={{ background: '#F8F8FD', padding: '0px', marginTop: '110px', marginBottom: '40px' }}>
     <section style={{ paddingTop: '10px', maxWidth: '940px' }}>

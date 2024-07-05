@@ -1,6 +1,9 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 const Refundpolicy = () => {
+  useEffect(() => {
+    document.title = "Jeeva Joy | Refund Policy | Kids Exercise Videos App | Fun Fitness for Children on Mobile, Smart TV, & Web";
+  }, []);
   return (
     <div className="page-content">
       <section>
