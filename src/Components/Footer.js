@@ -5,8 +5,8 @@ function Footer() {
   return (
     <footer className="footer">
     <div className="top_footer">
-        <Link to="/downloadourapp"><img src="/asset/btn-google-play.png" alt="" /></Link>
         <Link to="/downloadourapp"><img src="/asset/btn-app-store-1.png" alt="" /></Link>
+        <Link to="/downloadourapp"><img src="/asset/btn-google-play.png" alt="" /></Link>
         <Link to="/downloadourapp"><img src="/asset/app-devices-logo.png" alt="" /></Link>
     </div>
     <div className="bottom_footer">
