@@ -4,6 +4,12 @@ import { Link } from 'react-router-dom'
 function Footer() {
   return (
     <footer className="footer">
+    <div className="top_footer">
+        <img src="/asset/btn-google-play.png" alt="" />
+        <img src="/asset/btn-app-store-1.png" alt="" />
+        <img src="/asset/app-devices-logo.png" alt="" />
+    </div>
+    <div className="bottom_footer">
     <div className="footer-inner">
         <div className="col footer-col1">
             <h5 className="footer-coltitle">Company</h5>
@@ -99,7 +105,7 @@ function Footer() {
                 </li>
             </ul>
         </div>
-    </div>
+    </div></div>
 </footer>
   )
 }

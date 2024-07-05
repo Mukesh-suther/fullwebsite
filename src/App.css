@@ -296,11 +296,15 @@ header .mobileheader{
 
   
   /* //////footer */
-  footer{
+  /* footer{
+    background: #130052;
+    padding: 45px 0px 5px 0px;
+  } */
+  .footer > .bottom_footer{
     background: #130052;
     padding: 45px 0px 5px 0px;
   }
-  footer > div{
+  footer .bottom_footer > div{
     max-width: 1170px;
     margin: auto;
     width: 100%;
@@ -325,6 +329,17 @@ header .mobileheader{
     font-size: 14px;
     line-height: 1.5em;
     transition: .3s;
+  }
+  footer .top_footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+    gap: 13px;
+  }
+  footer .top_footer img{
+    height: 44px;
+    width: auto;
   }
   footer .footercollist li a:hover{
     color: white;
@@ -451,6 +466,9 @@ header .mobileheader{
 @media only screen and (max-width:767px){
   footer{
     display: none;
+  }
+  footer .top_footer{
+    display: none !important;
   }
   .header .headerinner {
     padding: 0px 20px;
