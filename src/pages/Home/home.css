@@ -84,6 +84,9 @@
     .homepagegalleryinner{
         grid-template-columns: repeat(1, 1fr);
     }
+    .homepage_banner{
+        display: none;
+    }
     .homepagegalleryinner > div{
         display: none;
     }

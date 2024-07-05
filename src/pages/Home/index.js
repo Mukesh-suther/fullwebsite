@@ -4,9 +4,9 @@ import "slick-carousel/slick/slick-theme.css";
 import "./home.css";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
-import banner1 from './../../assets/images/image (3).png'
-import banner2 from './../../assets/images/image (3).png'
-import banner3 from './../../assets/images/image (3).png'
+import banner1 from './../../assets/images/banner 1080-566px.png'
+import banner2 from './../../assets/images/banner 1080-566px.png'
+import banner3 from './../../assets/images/banner 1080-566px.png'
 import educationprogram1 from "./../../assets/images/front-view-children-playing-together-kindergarten@2x (1).jpg";
 import educationprogram2 from "./../../assets/images/pexels-cottonbro-3662628@2x.jpg";
 import educationprogram3 from "./../../assets/images/mother-daughter-having-fun-with-paint@2x.jpg";
@@ -54,7 +54,7 @@ function Home() {
   }, []);
   return (
     <div className="page-content">
-      <div className="homepage_banner">
+      <div className="homepage_banner" style={{maxWidth:'1080px', margin:"auto"}}>
         <Slider {...bnnersettings}>
           <Link to="https://www.watch.jeevajoy.com/">
           <img src={banner1} alt="banner1" />
