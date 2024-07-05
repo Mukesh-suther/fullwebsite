@@ -6,11 +6,12 @@
 }
 .cards_main .appcards{
     display: grid;
-    grid-template-columns: 33.333% 46.139% 20.157%;
+    grid-template-columns: 22.333% calc(57.139% - 40px) 20.157%;
     padding: 15px 25px;
     background: white;
     border-style: solid;
     border: none;
+    gap: 20px;
     border-color: #F8F8FD;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
     width: 100%;
@@ -71,6 +72,15 @@
 }
 @media only screen and (max-width: 768px) {
     .cards_main .appcards{
-        grid-template-columns: 1fr;
+        grid-template-columns: calc(100% - 120px) 108px;
+        gap: 10px;
+        padding: 10px;
+    }
+    .cards_logo{
+        display: none !important;
+    }
+    .cards_main .appcards a{
+        padding: 13px 18px;
+        font-size: 14px;
     }
 }

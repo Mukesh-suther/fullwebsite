@@ -15,14 +15,14 @@ function Downloadourapp() {
       <h2>Watch Exercise Videos on Mobile, Table & TV</h2>
       <div className="cards_main">
         {[
-          { img: applestore, text: 'Download for iPhone', link: '#' },
-          { img: applestore, text: 'Download for iPad', link: '#' },
-          { img: playstore, text: 'Download for Android', link: '#' },
-          { img: playstore, text: 'Download for Android TV', link: '#' },
-          { img: applestore, text: 'Download for Apple TV (Coming Soon)', link: '#', disabled: true },
-          { img: amazonicon, text: 'Download for Fire TV (Coming Soon)', link: '#', disabled: true },
-          { img: windowstore, text: 'Download for Windows (Coming Soon)', link: '#', disabled: true },
-          { img: applestore, text: 'Download for Mac OS (Coming Soon)', link: '#', disabled: true },
+          { img: applestore, text: 'Download for iPhone', link: 'https://www.watch.jeevajoy.com/' },
+          { img: applestore, text: 'Download for iPad', link: 'https://www.watch.jeevajoy.com/' },
+          { img: playstore, text: 'Download for Android', link: 'https://www.watch.jeevajoy.com/' },
+          { img: playstore, text: 'Download for Android TV', link: 'https://www.watch.jeevajoy.com/' },
+          { img: applestore, text: 'Download for Apple TV (Coming Soon)', link: 'https://www.watch.jeevajoy.com/', disabled: true },
+          { img: amazonicon, text: 'Download for Fire TV (Coming Soon)', link: 'https://www.watch.jeevajoy.com/', disabled: true },
+          { img: windowstore, text: 'Download for Windows (Coming Soon)', link: 'https://www.watch.jeevajoy.com/', disabled: true },
+          { img: applestore, text: 'Download for Mac OS (Coming Soon)', link: 'https://www.watch.jeevajoy.com/', disabled: true },
         ].map((card, index) => (
           <div className="appcards" key={index}>
             <div className="cards_logo">
@@ -32,7 +32,7 @@ function Downloadourapp() {
               <h4>{card.text}</h4>
             </div>
             <div className="cards_btn">
-              <Link to={card.link} className={card.disabled ? 'disabled' : ''}>
+              <Link to={card.link} className={card.disabled ? 'disabled' : ''} target='_blank'>
                 Download
               </Link>
             </div>

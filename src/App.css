@@ -364,6 +364,9 @@ header .mobileheader{
     height: 26px;
     width: 26px;
   }
+  footer .footer-coltitle{
+    margin-bottom: 1.5rem;
+  }
   .slick-dots{
     position: static !important;
     margin-top: 20px !important;
