@@ -91,7 +91,7 @@ function Home() {
           </div>
         </Slider>
         </div>
-        <div className="section_inner">
+        {/* <div className="section_inner">
           <h1>Meet Your Teachers</h1>
         </div>
         <div className="homepage_gallery">
@@ -151,7 +151,7 @@ function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <p>
           {" "}
           <span>Join us today and watch all the exercise videos!..</span>{" "}
