@@ -364,11 +364,36 @@ header .mobileheader{
     height: 26px;
     width: 26px;
   }
+  .slick-dots{
+    position: static !important;
+    margin-top: 20px !important;
+  }
+  .slick-dots li button:before{
+    font-size: 12px !important;
+  }
+  iframe{
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  @media only screen and (max-width:1302px){
+    .header{
+      padding: 0px;
+      width: 100%;
+    }
+    .header .headerinner{
+      max-width: 1170px;
+      margin: auto;
+    }
+  }
 @media only screen and (max-width:1199px){
   .header{
     position: static;
   }
   section{
+    max-width: 1024px;
+    padding: 0px 20px;
+  }
+  .header .headerinner{
     max-width: 1024px;
     padding: 0px 20px;
   }
@@ -417,15 +442,24 @@ header .mobileheader{
 }
 
 @media only screen and (max-width:767px){
-  /* footer{
+  footer{
     display: none;
-  } */
+  }
+  .header .headerinner {
+    padding: 0px 20px;
+}
   /* header{
     position: relative;
   } */
   h1{
     font-size: 32px;
   }
+  .page-content {
+    padding: 32px 0px 40px 0px;
+}
+.margin-0mobile{
+  margin: 0px !important;
+}
 }
 
 @keyframes slideDown {
