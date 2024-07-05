@@ -15,7 +15,7 @@ import educationprogram5 from "./../../assets/images/pexels-cottonbro-3662800-1@
 import educationprogram6 from "./../../assets/images/front-view-children-playing-together-kindergarten@2x (1).jpg";
 function Home() {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -68,8 +68,8 @@ function Home() {
         </Slider>
       </div>
       <section className="homepage_section1">
-        <div className="videos_container" style={{marginBottom:'30px'}}>
-        <h1>Meet Your Teachers</h1>
+        <div className="videos_container" style={{marginBottom:'0px'}}>
+        <h1 style={{paddingBottom:'10px', marginBottom:'0px', paddingTop:'10px'}}>Meet Your Teachers</h1>
         <Slider {...settings}>
           <div className="img_1">
             <img src={educationprogram1} alt="images" />
