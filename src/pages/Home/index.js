@@ -3,7 +3,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./home.css";
 import Slider from "react-slick";
-
+import { Link } from "react-router-dom";
+import banner1 from './../../assets/images/image (3).png'
+import banner2 from './../../assets/images/image (3).png'
+import banner3 from './../../assets/images/image (3).png'
 import educationprogram1 from "./../../assets/images/front-view-children-playing-together-kindergarten@2x (1).jpg";
 import educationprogram2 from "./../../assets/images/pexels-cottonbro-3662628@2x.jpg";
 import educationprogram3 from "./../../assets/images/mother-daughter-having-fun-with-paint@2x.jpg";
@@ -14,7 +17,6 @@ function Home() {
   var settings = {
     dots: true,
     infinite: true,
-    speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
@@ -38,130 +40,56 @@ function Home() {
       }
     ]
   };
+  var bnnersettings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 1500,
+    autoplaySpeed: 5000,
+  }
   useEffect(() => {
     document.title = "Jeeva Joy | Home | Kids Exercise Videos App | Fun Fitness for Children on Mobile, Smart TV, & Web";
   }, []);
   return (
     <div className="page-content">
+      <div className="homepage_banner">
+        <Slider {...bnnersettings}>
+          <Link to="https://www.watch.jeevajoy.com/">
+          <img src={banner1} alt="banner1" />
+          </Link>
+          <Link to="https://www.watch.jeevajoy.com/">
+          <img src={banner2} alt="banner2" />
+          </Link>
+          <Link to="https://www.watch.jeevajoy.com/">
+          <img src={banner3} alt="banner3" />
+          </Link>
+        </Slider>
+      </div>
       <section className="homepage_section1">
         <div className="videos_container" style={{marginBottom:'30px'}}>
         <h1>Meet Your Teachers</h1>
-          <Slider {...settings}>
-            {/* //video 1 */}
-            <div>
-              <div style={{ position: "relative" , paddingTop:'56.35%', margin:'0px 20px'}} className="margin-0mobile">
-                <iframe
-                  src="https://iframe.mediadelivery.net/embed/208370/7a592c6a-885d-4cfb-9940-d637499fe84d?autoplay=false&loop=false&muted=true&preload=false&responsive=true"
-                  loading="eager"
-                  style={{
-                    border: "0",
-                    position: "absolute",
-                    top: "0",
-                    height: "100%",
-                    width: "100%",
-                  }}
-                  title="1"
-                  allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            </div>
-            {/* video2 */}
-            <div>
-              <div style={{ position: "relative" , paddingTop:'56.35%', margin:'0px 20px'}} className="margin-0mobile">
-                <iframe
-                  src="https://iframe.mediadelivery.net/embed/208370/7a592c6a-885d-4cfb-9940-d637499fe84d?autoplay=false&loop=false&muted=true&preload=false&responsive=true"
-                  loading="eager"
-                  style={{
-                    border: "0",
-                    position: "absolute",
-                    top: "0",
-                    height: "100%",
-                    width: "100%",
-                  }}
-                  title="2"
-                  allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            </div>
-            {/* video 3 */}
-            <div>
-              <div style={{ position: "relative" , paddingTop:'56.35%', margin:'0px 20px'}} className="margin-0mobile">
-                <iframe
-                  src="https://iframe.mediadelivery.net/embed/208370/7a592c6a-885d-4cfb-9940-d637499fe84d?autoplay=false&loop=false&muted=true&preload=false&responsive=true"
-                  loading="eager"
-                  title="3"
-                  style={{
-                    border: "0",
-                    position: "absolute",
-                    top: "0",
-                    height: "100%",
-                    width: "100%",
-                  }}
-                  allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            </div>{" "}
-            {/* video 4 */}
-            <div>
-              <div style={{ position: "relative" , paddingTop:'56.35%', margin:'0px 20px'}} className="margin-0mobile">
-                <iframe
-                  src="https://iframe.mediadelivery.net/embed/208370/7a592c6a-885d-4cfb-9940-d637499fe84d?autoplay=false&loop=false&muted=true&preload=false&responsive=true"
-                  loading="eager"
-                  title="4"
-                  style={{
-                    border: "0",
-                    position: "absolute",
-                    top: "0",
-                    height: "100%",
-                    width: "100%",
-                  }}
-                  allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            </div>
-            {/* video 5 */}
-            <div>
-              <div style={{ position: "relative" , paddingTop:'56.35%', margin:'0px 20px'}} className="margin-0mobile">
-                <iframe
-                  src="https://iframe.mediadelivery.net/embed/208370/7a592c6a-885d-4cfb-9940-d637499fe84d?autoplay=false&loop=false&muted=true&preload=false&responsive=true"
-                  loading="eager"
-                  title="5"
-                  style={{
-                    border: "0",
-                    position: "absolute",
-                    top: "0",
-                    height: "100%",
-                    width: "100%",
-                  }}
-                  allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            </div>
-            {/* video 6 */}
-            <div>
-              <div style={{ position: "relative" , paddingTop:'56.35%', margin:'0px 20px'}} className="margin-0mobile">
-                <iframe
-                  src="https://iframe.mediadelivery.net/embed/208370/7a592c6a-885d-4cfb-9940-d637499fe84d?autoplay=false&loop=false&muted=true&preload=false&responsive=true"
-                  loading="eager"
-                  title="6"
-                  style={{
-                    border: "0",
-                    position: "absolute",
-                    top: "0",
-                    height: "100%",
-                    width: "100%",
-                  }}
-                  allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            </div>
-          </Slider>
+        <Slider {...settings}>
+          <div className="img_1">
+            <img src={educationprogram1} alt="images" />
+          </div>
+          <div className="img_2">
+            <img src={educationprogram2} alt="images" />
+          </div>
+          <div className="img_3">
+            <img src={educationprogram3} alt="images" />
+          </div>
+          <div className="img_4">
+            <img src={educationprogram4} alt="images" />
+          </div>
+          <div className="img_5">
+            <img src={educationprogram5} alt="images" />
+          </div>
+          <div className="img_6">
+            <img src={educationprogram6} alt="images" />
+          </div>
+        </Slider>
         </div>
         <div className="section_inner">
           <h1>Meet Your Teachers</h1>
