@@ -71,24 +71,24 @@ function Home() {
         <div className="videos_container" style={{marginBottom:'0px'}}>
         <h1 style={{paddingBottom:'10px', marginBottom:'0px', paddingTop:'10px'}}>Meet Your Teachers</h1>
         <Slider {...settings}>
-          <div className="img_1">
+          <Link to="/instructors" className="img_1">
             <img src={educationprogram1} alt="images" />
-          </div>
-          <div className="img_2">
+          </Link>
+          <Link to="/instructors" className="img_2">
             <img src={educationprogram2} alt="images" />
-          </div>
-          <div className="img_3">
+          </Link>
+          <Link to="/instructors" className="img_3">
             <img src={educationprogram3} alt="images" />
-          </div>
-          <div className="img_4">
+          </Link>
+          <Link to="/instructors" className="img_4">
             <img src={educationprogram4} alt="images" />
-          </div>
-          <div className="img_5">
+          </Link>
+          <Link to="/instructors" className="img_5">
             <img src={educationprogram5} alt="images" />
-          </div>
-          <div className="img_6">
+          </Link>
+          <Link to="/instructors" className="img_6">
             <img src={educationprogram6} alt="images" />
-          </div>
+          </Link>
         </Slider>
         </div>
         {/* <div className="section_inner">
